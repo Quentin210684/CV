@@ -1,0 +1,173 @@
+#pageHeader{
+    color:white;
+    text-align: center;
+    background-image: url(https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
+    background-size: 99em;
+    height: 169px;
+    border: outset;
+    padding: 9px;
+    margin-right: -1px;
+}
+.center{
+    text-align: center;
+    height: 36px;
+    padding: 26px;
+    font-size: large;
+    animation-duration: 3s;
+    animation-name: slidein2;
+}
+@keyframes slidein2{
+    from {
+        margin-right: 100%;
+        width: 300%;
+    }
+to{
+    margin-right: 100%;
+    width: 100%;
+    }
+}
+
+#fontSize{
+    font-size: 17px;
+    padding: 2px;
+    font-size: 24px;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein{
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+to{
+    margin-left: 0%;
+    width: 100%;
+    }
+}
+#bordderoulant{
+    background-color:#000000;
+    height: 53px;
+    border:outset;
+    margin-left: 0px;
+    margin-right: 2px;
+    margin-top: -2px;
+
+}
+#fondColor{
+    background-color:#000000;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: black;
+    border-bottom: 2px solid #505050;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+   
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: white;
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+    color: white;
+}
+
+.conteneur{
+  margin: 50px 20px;
+  height: 1500px;
+}
+#body{
+    background-color:#232323 ;
+    height: 828px;
+    margin-top: 15px;
+    margin-left: -2px;
+    margin-right: -3px;
+}
+
+.portrait{
+    margin-top: -48em;
+    margin-left: 7em;
+    padding-block: 123px;
+    padding-block-start: 11px;
+    animation-duration: 3s;
+    animation-name: slidein3;
+    
+}
+@keyframes slidein3{
+    from {
+        margin-left: 100%;
+        widthu: 300%;
+    }
+to{
+    margin-up: 0%;
+    width: 100%;
+    }
+
+}
+#resume{
+    text-align: center;
+    margin-top: 18em;
+    margin-left: 33em;
+    color: white;
+   
+}
